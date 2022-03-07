@@ -28,11 +28,17 @@ body{
 
 aside{
     width: 230px;
-    background-color: red;
+    background-color: black;
+}
+
+aside svg{
+    width: 150px;
+    margin: 20px 10px ;
+
 }
 main{
     width: calc(100% - 230px);
-    background-color: orangered;
+    background-color: rgb(20, 25, 34);
 }
 
 nav.top{
@@ -52,7 +58,7 @@ nav.top{
 footer{
     height: 90px;
     width: 100%;
-    background-color: green;
+    background-color: rgb(40, 40, 40);
     position: fixed;
     bottom: 0;
     left: 0;

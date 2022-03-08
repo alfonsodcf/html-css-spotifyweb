@@ -148,10 +148,12 @@ div.container-card {
 
 .card h2{
     padding-top: 10px;
+    font-size: 1.3vw;
 }
 
 .card p{
     padding-top: 5px;
+    font-size: 0.8vw;
 }
 
 footer{

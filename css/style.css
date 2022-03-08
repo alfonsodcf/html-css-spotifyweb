@@ -17,7 +17,30 @@ body{
 
 a{
     text-decoration: none;
+    color: rgb(113, 116, 119);
 }
+
+li{
+    color: rgb(113, 116, 119);
+}
+
+p{
+    color: rgb(113, 116, 119);
+}
+
+.container-flex{
+    display: flex;
+}
+
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+.float-right {
+    float: right;
+}
+
 .wrapper{
     height: 100vh;
     width: 100%;
@@ -40,24 +63,52 @@ aside svg{
     margin: 20px 10px ;
 
 }
+
+aside .profilo a svg{
+    width: 20px;
+    background-color: rgb(126, 127, 128);
+    padding: 1px 2px;
+    border-radius: 50%;
+}
+
+aside .profilo h4{
+    display: inline-block;
+    vertical-align: 25px;
+}
+
+
+
 main{
     width: calc(100% - 230px);
     background-color: rgb(20, 25, 34);
 }
 
 nav.top{
-    width: 100%;
+    width: calc(100% - 230px);;
     height: 90px;
     position: fixed;
     z-index: 1000;
     background-color: rgba(0, 0, 0, 0.3);
 }
 
+main .top a{
+    margin-top: 25px;
+    margin-right: 20px;
+    padding: 10px 35px;
+    border: 1px solid white;
+    border-radius: 30px;
+    color: white;
+    
+}
+
+
 .main-content{
     height: 100%;
     overflow-y: auto;
     width: 100%;
+    padding: 0 30px;
     padding-top: 90px;
+    
 }
 
 .ul-main{
@@ -75,14 +126,32 @@ nav.top{
 }
 
 .ul-main li a{
-    color: rgb(113, 116, 119);
+    
     text-transform: uppercase;
 }
 
+div.container-card {
+    margin-left: -20px;
+}
 
-.ul-main li a{
-    color: rgb(113, 116, 119);
-    text-transform: uppercase;
+.card{
+    width: calc(100% / 6);
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 20px;
+    
+}
+
+.card img{
+    width: 100%;
+}
+
+.card h2{
+    padding-top: 10px;
+}
+
+.card p{
+    padding-top: 5px;
 }
 
 footer{

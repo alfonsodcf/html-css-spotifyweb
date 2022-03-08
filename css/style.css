@@ -64,16 +64,15 @@ aside svg{
 
 }
 
-aside .profilo a svg{
+aside .profilo a i{
     width: 20px;
-    background-color: rgb(126, 127, 128);
-    padding: 1px 2px;
-    border-radius: 50%;
+    color: rgb(126, 127, 128);
+    
+    
 }
 
 aside .profilo h4{
     display: inline-block;
-    vertical-align: 25px;
 }
 
 

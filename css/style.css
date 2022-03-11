@@ -313,16 +313,19 @@ footer div .name-play{
 .emoticon-1{
     display: inline-block;
     padding-left: 30px;
-    vertical-align: 15px;
+    vertical-align: 5px;
 }
 
 .emoticon-1 i{
+    display: block;
+    margin-top: 5px;
     padding-right: 10px;
     color: rgb(113, 116, 119);
 }
 
 .play-bar{
     text-align: center;
+    width: 33%;
 }
 .play-on{
     margin: 0 auto;
@@ -351,7 +354,7 @@ div.play{
     display: inline-block;
     margin-top: 10px;
     height: 4px;
-    width: 500px;
+    width: 75%;
     background-color: rgb(113, 116, 119) ;
     vertical-align: 2px;
     border-radius: 30px;
@@ -387,3 +390,83 @@ div.play{
     border-radius: 30px;
 }
 
+@media screen and (max-width: 1070px) {
+
+    .container-flex{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .card{
+        width: calc(100% / 4);
+        text-align: center;
+        margin-top: 30px;
+        margin-left: 20px;
+        
+    }
+
+    footer{
+        padding:20px 10px;
+    }
+    .foot-con1 {
+        width: 190px;
+    }
+    .foot-con3 {
+        width: 190px;
+    }
+    .volume{
+        width: 80px;
+    }
+    .play-on a {
+        margin: 0 5px;
+    }
+    .fine{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 660px) {
+
+    .container-flex{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .card{
+        width: calc(100% / 3);
+        text-align: center;
+        margin-top: 30px;
+        margin-left: 20px;
+        
+    }
+
+    .main-content{
+        height: 100%;
+        overflow-y: auto;
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 0;
+        padding-top: 90px;
+        
+    }
+
+    .foot-con3 i{
+        margin-right: 5px;
+    }
+
+    .emoticon-1{
+        padding-left: 0px;
+    }
+    .emoticon-1 i{
+        padding: 0px;
+    }
+
+    .volume{
+        width: 60px;
+    }
+    .foot-con1 {
+        width: 150px;
+    }
+    .foot-con3 {
+        width: 150px;
+    }
+}

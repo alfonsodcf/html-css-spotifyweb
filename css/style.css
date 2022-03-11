@@ -6,7 +6,7 @@
 }
 
 .debug{
-    border: 1px solid white;
+   border: 1px solid white;
    font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -36,16 +36,9 @@ p{
     color: rgb(113, 116, 119);
 }
 
-.piu a{ 
-padding: 3px  10px;
-background-color:rgb(113, 116, 119);
-color: black;
-font-size: 30px;
-font-weight: 900
-}
-
-.piu span{
-    vertical-align: 3px;
+.nav-aside ul li{
+    margin-bottom: 10px;
+    
 }
 
 
@@ -82,8 +75,7 @@ aside{
     width: 230px;
     background-color: black;
     height: 100%;
-    border: 1px solid white;
-    padding-left: 15px;
+    padding-left: 20px;
 }
 
 aside svg{
@@ -98,6 +90,50 @@ aside .profilo a i{
     
     
 }
+
+.nav-aside ul li i{
+    font-size: 20px;
+    margin-right: 8px;
+
+}
+
+.nav-aside ul li a:hover{
+    color: white;
+   
+}
+
+
+.cerca{ 
+    padding-left: 4px;
+}
+
+.libreria{
+    padding-left: 3px;
+}
+
+.piu{
+    margin-bottom: 10px;
+}
+
+.piu h3{
+    padding-top: 5px;
+    margin-bottom: 5px;
+}
+.piu a{ 
+padding: 5px  8px;
+background-color:rgb(113, 116, 119);
+color: black;
+font-size: 20px;
+}
+
+.piu a:hover{
+    background-color: white;
+}
+.piu span{
+    vertical-align: 3px;
+}
+
+
 
 aside .profilo h4{
     display: inline-block;
@@ -153,8 +189,12 @@ main .top a{
 
 .ul-main li{
     display: inline-block;
-    padding: 0 15px;
-    
+    padding: 0 15px;    
+}
+
+
+.ul-main li a:hover{
+    color: white;
     
 }
 
@@ -174,9 +214,11 @@ div.container-card {
     margin-left: 20px;
     
 }
-
+.relative{
+    position: relative;  
+} 
 .card img{
-    width: 100%;
+    width: 100%;  
 }
 
 .card h2{
@@ -197,6 +239,38 @@ div.container-card {
     border-radius: 50%;
 }
 
+
+.hoverlay::before:hover{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0,0.5);
+}
+
+.hover-play{
+    display: none;
+}
+.hover-play:hover{
+    display: inline-block;
+    position: absolute;
+    top: calc(50% - 30px) ;
+    left: 0;
+    right: 0;   
+    min-height: 60px;
+    display: inline-block;
+    
+    
+}
+.hover-play i{
+    font-size: 45px;
+    padding: 10px 15px ;
+    border: 3px solid white;
+    border-radius: 50%;
+ }
+
 footer{
     height: 90px;
     width: 100%;
@@ -208,17 +282,18 @@ footer{
     
 }
 
-.player-bar{
+footer .container-flex{
     justify-content: space-between;
 }
 
 .foot-con1{
-    border: 1px solid white;
+    
     width: 220px;
 }
 
 .foot-con3{
     width: 220px;
+    margin-top: 10px;
 }
 footer img{
     width: 50px;
@@ -244,5 +319,71 @@ footer div .name-play{
 .emoticon-1 i{
     padding-right: 10px;
     color: rgb(113, 116, 119);
+}
+
+.play-bar{
+    text-align: center;
+}
+.play-on{
+    margin: 0 auto;
+}
+
+div.play{
+    display: inline-block;
+    width: 70px;
+    height: 30px;
+    text-align: center;
+}
+
+.play a {
+    padding: 10px 12px ;
+    border: 3px solid white;
+    border-radius: 50%;
+}
+
+.play-on a {
+    margin: 0 10px;
+    color: white;
+   
+}
+
+.play-under{
+    display: inline-block;
+    margin-top: 10px;
+    height: 4px;
+    width: 500px;
+    background-color: rgb(113, 116, 119) ;
+    vertical-align: 2px;
+    border-radius: 30px;
+}
+
+.container-play-under{
+    height: 100%;
+    width: 30%;
+    border-radius: 30px;
+    background-color: white;
+}
+
+.inizio{
+    padding-right: 10px;
+    font-size: 12px;
+}
+
+.fine{
+    padding-left: 10px;
+    font-size: 12px;
+}
+
+.foot-con3 i{
+    margin-right: 12px;
+}
+
+.volume{
+    display: inline-block;
+    height: 4px;
+    width: 100px;
+    background-color: rgb(113, 116, 119) ;
+    vertical-align: 4px;
+    border-radius: 30px;
 }
 

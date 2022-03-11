@@ -24,6 +24,9 @@ h1{
     margin-top: 40px;
 }
 
+ul{
+    list-style-type: none;
+}
 li{
     color: rgb(113, 116, 119);
 }
@@ -32,6 +35,19 @@ p{
     padding-top: 10px;
     color: rgb(113, 116, 119);
 }
+
+.piu a{ 
+padding: 3px  10px;
+background-color:rgb(113, 116, 119);
+color: black;
+font-size: 30px;
+font-weight: 900
+}
+
+.piu span{
+    vertical-align: 3px;
+}
+
 
 .container-flex{
     display: flex;
@@ -44,6 +60,10 @@ p{
 }
 .float-right {
     float: right;
+}
+
+.inline-block{
+    display: inline-block;
 }
 
 .wrapper{
@@ -61,11 +81,14 @@ p{
 aside{
     width: 230px;
     background-color: black;
+    height: 100%;
+    border: 1px solid white;
+    padding-left: 15px;
 }
 
 aside svg{
     width: 150px;
-    margin: 20px 10px ;
+    margin: 20px 0;
 
 }
 
@@ -80,8 +103,16 @@ aside .profilo h4{
     display: inline-block;
 }
 
+aside .playlist{
+    min-height: 215px;
+    
 
 
+}
+
+.playlist ul li{
+    padding: 6px 0;
+}
 main{
     width: calc(100% - 230px);
     background-color: rgb(20, 25, 34);
@@ -173,8 +204,45 @@ footer{
     position: fixed;
     bottom: 0;
     left: 0;
+    padding: 20px;
+    
 }
 
+.player-bar{
+    justify-content: space-between;
+}
 
+.foot-con1{
+    border: 1px solid white;
+    width: 220px;
+}
 
+.foot-con3{
+    width: 220px;
+}
+footer img{
+    width: 50px;
+
+}
+
+footer p{
+    padding-top: 0;
+    font-size: 13px;
+}
+
+footer div .name-play{
+    padding-left: 5px;
+    vertical-align: 8px;
+}
+
+.emoticon-1{
+    display: inline-block;
+    padding-left: 30px;
+    vertical-align: 15px;
+}
+
+.emoticon-1 i{
+    padding-right: 10px;
+    color: rgb(113, 116, 119);
+}
 
